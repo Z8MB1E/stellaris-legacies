@@ -1,0 +1,5 @@
+lgc_civic_extragalactic_visitors = {
+    modification = no
+    icon = "gfx/interface/icons/governments/civics/lgc_civic_extragalactic_visitors.dds"
+    
+}

@@ -1,0 +1,17 @@
+lgc_gov_extragalactic_visitors = {
+    ruler_title = LGC_RT_STARWALKER
+    ruler_title_female = LGC_RT_STARWALKER
+    heir_title = LGC_RT_SKYWATCHER
+    heir_title_female = LGC_RT_SKYWATCHER
+
+    use_regnal_names = yes
+    dynastic_last_names = yes
+
+    possible = {
+        has_authority = lgc_auth_extragalactic_empire
+    }
+
+    weight = {
+        base = 100
+    }
+}

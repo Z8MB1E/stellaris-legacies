@@ -1,0 +1,87 @@
+# Legacies custom country types
+# by Z8MB1E
+
+extragalactic = {
+    has_difficulty_bonuses = yes
+    counts_for_victory = yes
+    sub_title = "LGC_COUNTRY_EXTRAGALACTIC"
+    sub_title_desc = "LGC_COUNTRY_EXTRAGALACTIC_DESC"
+
+    pop_growth = yes
+    playable = yes
+    has_pulse_events = yes
+    piracy_risk = yes
+    randomize_ethos = yes
+    shuffle_pop_ethos = yes
+    needs_survey = yes
+    diplomatic_wars = yes
+    ship_disengagement = yes
+    army_disengagement = yes
+    relations = yes
+    observable = yes
+    can_use_invalid_technology = no
+
+    ai = {
+        enabled = no
+        construction = no
+    }
+
+    trade_routes_available = {
+        is_gestalt = no
+    }
+    
+    modules = {
+        standard_event_module = {}
+        standard_economy_module = {}
+        standard_leader_module = {}
+        standard_diplomacy_module = {}
+        tiered_technology_module = {
+            tier = 4
+            rare = no
+        }
+        standard_trade_routes_module = {}
+        standard_pop_factions_module = {}
+        standard_expansion_module = {}
+        standard_species_rights_module = {}
+    }
+
+    resources = {
+        category = country_base
+        produces = {
+            energy = 250
+            minerals = 120
+            physics_research = 40
+            society_research = 40
+            engineering_research = 40
+            influence = 3
+            unity = 25
+            alloys = 10
+        }
+        produces = {
+            trigger = {
+                OR = {
+                    is_gestalt = no
+                }
+            }
+            consumer_goods = 25
+        }
+        produces = {
+            trigger = {
+                OR = {
+                    is_regular_empire = yes
+                    is_hive_empire = yes
+                }
+            }
+            food = 15
+        }
+    }
+    
+    # planet scope
+    branch_office_resources = {
+        category = planet_branch_offices
+        cost = {
+            energy = 1000
+            influence = 50
+        }
+    }
+}

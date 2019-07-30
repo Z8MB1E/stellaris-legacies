@@ -1,0 +1,50 @@
+lgc_auth_extragalactic_empire = {
+    has_heir = yes
+
+    has_agendas = yes
+
+    potential = {
+        ethics = {
+            NOT = { value = ethic_gestalt_consciousness }
+        }
+    }
+}
+
+lgc_auth_extragalactic_gestalt = {
+    has_heir = no
+	election_type = none
+	has_factions = no
+	can_reform = no
+	localization_postfix = hive_mind
+	
+	valid_for_released_vassal = no
+	
+	playable = { host_has_dlc = "Utopia" }
+	possible = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+	}
+	random_weight = {
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Utopia" }
+		}
+	}
+
+	traits = {
+		trait = trait_hive_mind
+	}
+
+	country_modifier = {
+        pop_growth_speed = 0.75
+        country_base_unity_produces_mult = 0.5
+	}
+	
+	tags = {
+		AUTH_HIVE_MIND_AI_RESTRICTIONS
+		AUTH_HIVE_MIND_FOREIGN_POP_SURVIVAL
+		AUTH_HIVE_MIND_GENEMODDING
+		AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS
+	}
+}
